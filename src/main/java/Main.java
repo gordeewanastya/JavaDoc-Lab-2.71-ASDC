@@ -15,10 +15,14 @@ public class Main {
         File file = new File("src/main/resources/students.csv");
         ReaderFromFile readerFromFile = new ReaderFromFile();
 
-        // READ STUDENTS FROM FILE INTO LIST
+        /**
+         * Read students from file into list
+         * */
         List<Student> students = readerFromFile.readFromFile(file);
 
-        // SHOW THEM ON THE SCREEN
+        /**
+         * Showing student on the screen
+         * */
         students.stream().forEach(System.out::println);
 
     }
